@@ -1,56 +1,70 @@
-# Chloe Lim · Portfolio
+# Chloe Lim | Portfolio
 
-Personal portfolio site. Plain HTML, CSS and JavaScript: no build step, no installs.
+My personal portfolio website: **https://chloelzx25.github.io/**
 
-## Files
+I'm a Year 2 Information Technology student at Singapore Polytechnic, specialising in AI & Analytics. The site shows my projects in data analysis, back-end development, databases and secure coding, along with my skills, experience and resume.
 
-| File | What it is |
+## What's on the site
+
+- **Projects** with a short summary, what I did, a key decision, and links to the code
+- **Charts** from my two data analysis projects, which open larger when clicked
+- **A demo video** of a UiPath automation workflow
+- **A slideshow** from my secure coding presentation on stored XSS and SQL injection
+- **Skills, experience and education**
+- **A downloadable one-page resume**
+
+## My projects
+
+| Project | Code |
 |---|---|
-| `content.js` | **All the text on the site.** This is the only file you normally edit. |
-| `index.html` | Page structure |
-| `styles.css` | Colours, fonts and layout (change `--accent` at the top to restyle) |
-| `main.js` | Turns `content.js` into the page |
-| `assets/photo.jpg` | Your photo, shown only on the printable resume page (`resume/resume.html`) |
-| `assets/og-preview.png` | The 1200×630 preview image shown when the link is shared |
-| `assets/fonts/` | The two fonts, stored locally so the page loads faster |
-| `404.html` | Page shown for a broken link |
-| `assets/projects/` | Project screenshots |
-| `assets/Chloe-Lim-Resume.pdf` | The resume the "Download resume" button gives out |
-| `resume/resume.html` | Source of the resume PDF |
+| Wellness Impact: gamified wellness app (Express, MySQL, JWT) | [wellness-impact](https://github.com/Chloelzx25/wellness-impact) |
+| Restaurant Ordering System (PostgreSQL, Prisma, Node.js) | [restaurant-ordering-system](https://github.com/Chloelzx25/restaurant-ordering-system) |
+| Does a Degree Pay? Graduate vs national workforce (Python, UiPath) | [graduate-employment-analysis](https://github.com/Chloelzx25/graduate-employment-analysis) |
+| Job Posting Salary Analysis (Python, pandas) | [job-salary-analysis](https://github.com/Chloelzx25/job-salary-analysis) |
 
-## Updating the site
+## How it's built
 
-1. Open `content.js` in VS Code. Every section has a comment explaining its fields.
-2. **Add a project:** copy one `{ ... },` block in `projects`, change the text, and give it a new `id`. Put it where you want it in the list.
-3. **Add a screenshot:** save an 800×500 PNG/JPG in `assets/projects/`, then set `img: "assets/projects/your-file.png"`. If `img` is left as `""`, a placeholder tile is shown.
-4. **Link a skill to a project:** add the project's `id` to that skill's `proof` list.
-6. **Project depth:** each project can have `decision` (one key decision and why), `checked` (how you tested it) and `next` (what you'd improve). Empty ones are hidden.
-7. **Add certifications:** fill in the `certifications` list at the bottom; the section appears by itself.
+A plain static site with no build step and no frameworks, hosted free on GitHub Pages.
 
-Preview it locally before publishing:
+- **HTML, CSS and JavaScript** only
+- All the text lives in one file, `content.js`, and `main.js` turns it into the page
+- Responsive layout that works on phones, tablets and laptops
+- Keyboard-friendly controls, text alternatives for images, and a colour scheme with good contrast
 
-```bash
-python -m http.server 8000
+## Project structure
+
+```
+├── index.html        page structure
+├── styles.css        design
+├── main.js           builds the page from content.js
+├── content.js        all the text, projects and links
+├── 404.html          page for broken links
+├── resume/
+│   └── resume.html   source of the resume PDF
+└── assets/
+    ├── Chloe-Lim-Resume.pdf
+    ├── charts/       chart images
+    ├── slides/       secure coding slides
+    ├── media/        demo video
+    ├── projects/     project screenshots
+    └── fonts/
 ```
 
-Then open http://localhost:8000. Check it on a phone width too (in Chrome: F12, then the phone icon).
+## Run it on your computer
 
-## Updating the resume
+1. Download or clone this repo.
+2. Open the folder in VS Code and start the **Live Server** extension, or run `python -m http.server` in the folder.
+3. Open the address it shows, for example `http://localhost:8000`.
 
-1. Edit `resume/resume.html`.
-2. Put your photo at `assets/photo.jpg` (passport-style, plain background); it fills the box at the top right.
-3. Open `resume/resume.html` in Chrome, press Ctrl+P, choose **Save as PDF**, paper **A4**, margins **None**, tick **Background graphics**, untick **Headers and footers**.
-4. Save over `assets/Chloe-Lim-Resume.pdf`. Make sure it is still one page.
+Opening `index.html` by double-clicking may work, but a local server is more reliable.
 
-The resume has no phone number because the PDF is public on the site. Add one to a separate copy when you send applications directly.
+## Update the site
 
-## Publishing on GitHub Pages
+- **Text, projects and links:** edit `content.js`.
+- **Resume:** edit `resume/resume.html`, print it to PDF from Chrome (A4, no margins, background graphics on), and save it over `assets/Chloe-Lim-Resume.pdf`.
+- **Publish:** commit the changes to the `main` branch. GitHub Pages updates in about a minute.
 
-1. Create a new public repository on GitHub named `Chloelzx25.github.io`.
-2. Upload all the files in this folder (or push them with Git).
-3. In the repository, go to **Settings → Pages**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. After a minute the site is live at https://chloelzx25.github.io/
+## Credits
 
-After that, every change you push to `main` goes live by itself.
-
-Once it's live, open `index.html` and change the two `assets/og-preview.png` links in the `<head>` to the full address (`https://chloelzx25.github.io/assets/og-preview.png`) so link previews work on WhatsApp and LinkedIn. The 404 page assumes the site is at the root of `chloelzx25.github.io`.
+- Fonts: [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk) and [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono), both under the SIL Open Font License.
+- Charts, slides and screenshots are from my own coursework. Some projects were done in groups, as noted on each project card.
