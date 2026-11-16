@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chloe Lim · IT student, AI & Analytics</title>
+  <meta name="description" content="Portfolio of Chloe Lim, Year 2 Information Technology student at Singapore Polytechnic specialising in AI & Analytics.">
+  <meta name="theme-color" content="#f3f4f0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chloe Lim · IT student, AI & Analytics">
+  <meta property="og:description" content="Data analysis, database and back-end projects by a Year 2 IT student at Singapore Polytechnic.">
+  <meta property="og:image" content="https://chloelzx25.github.io/assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chloelzx25.github.io/assets/og-preview.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="layout">
+
+    <!-- Left column: name, navigation, links (sticky on desktop) -->
+    <aside class="side">
+      <div class="side-top">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">CL</span>
+          <span class="brand-name" data-text="name"></span>
+        </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      </div>
+
+      <p class="side-role" data-text="role"></p>
+
+      <nav id="nav" class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="side-links" id="side-links"></div>
+    </aside>
+
+    <main id="top">
+
+      <!-- Intro -->
+      <header class="intro">
+        <p class="status"><span class="dot" aria-hidden="true"></span><span data-text="status"></span></p>
+        <h1><span data-text="fullName"></span></h1>
+        <p class="intro-text" data-text="intro"></p>
+        <div class="intro-actions">
+          <a class="btn btn-solid" id="resume-btn" download>Download resume</a>
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="about">
+          <div class="about-body">
+            <div id="about-text"></div>
+            <dl class="facts" id="facts"></dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>Projects</h2>
+        </div>
+        <p class="section-lead">School projects, strongest first. Each one says what I did myself, one key decision, and how I checked it where I tested it.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+        <div class="projects" id="project-list"></div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2>Skills</h2>
+        </div>
+        <p class="section-lead">Every skill links to the project where I used it.</p>
+        <div class="skills" id="skill-list"></div>
+        <h3 class="sub">Beyond code</h3>
+        <ul class="soft" id="soft-list"></ul>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline" id="experience-list"></div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2>Education</h2>
+        </div>
+        <div class="timeline" id="education-list"></div>
+        <div id="cert-wrap" hidden>
+          <h3 class="sub">Certifications</h3>
+          <ul class="certs" id="cert-list"></ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <span class="section-num">06</span>
+          <h2>Contact</h2>
+        </div>
+        <p class="contact-lead">The quickest way to reach me is email.</p>
+        <a class="contact-email" id="contact-email"></a>
+        <div class="contact-links" id="contact-links"></div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> <span data-text="fullName"></span></span>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </main>
+  </div>
+
+  <script src="content.js?v=4"></script>
+  <script src="main.js?v=4"></script>
+</body>
+</html>

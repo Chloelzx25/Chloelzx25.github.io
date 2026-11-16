@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chloe Lim Zhi Xin - Resume</title>
+<!--
+  HOW TO UPDATE THE RESUME
+  1. Edit the text below.
+  2. Put your photo at assets/photo.jpg (passport-style, plain background). It shows in the box automatically.
+  3. Open this file in Chrome, press Ctrl+P, choose "Save as PDF", paper A4, margins "None",
+     tick "Background graphics", untick "Headers and footers".
+  4. Save it over assets/Chloe-Lim-Resume.pdf so the website's Resume button uses the new version.
+  Keep it to ONE page.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @font-face { font-family: "Schibsted Grotesk"; src: local("Schibsted Grotesk"), url("../assets/fonts/schibsted-grotesk.woff2") format("woff2"); font-weight: 400 800; font-display: block; }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #e8e8e4; }
+  body { font-family: "Schibsted Grotesk", Arial, sans-serif; color: #16201c; font-size: 9.4pt; line-height: 1.34; }
+  .page { width: 210mm; height: 297mm; margin: 0 auto; background: #fff; padding: 11mm 15mm 9mm; overflow: hidden; }
+  @media print { html, body { background: #fff; } .page { margin: 0; } }
+
+  header { display: flex; justify-content: space-between; gap: 8mm; padding-bottom: 4mm; border-bottom: 1.4pt solid #16201c; }
+  h1 { margin: 0; font-size: 22pt; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .tagline { margin: 1.2mm 0 2.6mm; font-size: 10.5pt; font-weight: 600; color: #1f6b58; }
+  .contact { display: flex; flex-wrap: wrap; gap: 1mm 4mm; font-size: 9pt; color: #3d4742; }
+  .contact a { color: inherit; text-decoration: none; }
+  .photo { flex: none; width: 30mm; height: 38mm; border: 0.8pt solid #c9cfc7; position: relative; overflow: hidden; background: #f6f7f4; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
+  .photo span { position: absolute; inset: 0; display: grid; place-items: center; font-size: 8pt; color: #9aa29d; }
+
+  h2 { margin: 3.4mm 0 1.4mm; font-size: 10pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #1f6b58; border-bottom: 0.6pt solid #c9cfc7; padding-bottom: 0.8mm; }
+  p { margin: 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .row strong { font-weight: 700; }
+  .when { flex: none; font-size: 9pt; color: #3d4742; }
+  .sub { color: #3d4742; }
+  .item { margin-bottom: 1.6mm; }
+  .item:last-child { margin-bottom: 0; }
+  ul { margin: 0.6mm 0 0; padding-left: 4.2mm; }
+  li { margin: 0.2mm 0; }
+  li::marker { color: #1f6b58; }
+  .skills { display: grid; grid-template-columns: 27mm 1fr; gap: 0.7mm 3mm; }
+  .skills b { font-weight: 600; }
+  .stack { font-size: 8.8pt; color: #5b6661; font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <h1>Chloe Lim Zhi Xin</h1>
+      <p class="tagline">Year 2 Information Technology Student · AI &amp; Analytics</p>
+      <div class="contact">
+        <a href="mailto:chloelzx2008@gmail.com">chloelzx2008@gmail.com</a>
+        <a href="https://www.linkedin.com/in/chloe-lim-zx">linkedin.com/in/chloe-lim-zx</a>
+        <a href="https://github.com/Chloelzx25">github.com/Chloelzx25</a>
+        <a href="https://chloelzx25.github.io/">chloelzx25.github.io</a>
+        <span>Singapore</span>
+      </div>
+    </div>
+    <div class="photo"><img src="../assets/photo.jpg" alt="" onerror="this.remove()"><span>Photo</span></div>
+  </header>
+
+  <h2>Summary</h2>
+  <p>IT student at Singapore Polytechnic specialising in AI &amp; Analytics, with hands-on work in Python data analysis, relational database design and Node.js back ends. Looking for an internship where I can turn data into decisions and help build reliable, secure systems.</p>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="row"><strong>Singapore Polytechnic, Diploma in Information Technology</strong><span class="when">2025 – 2028 (expected)</span></div>
+    <p class="sub">Specialisation: AI &amp; Analytics · cGPA 3.49 / 4.0 (Year 2, Semester 1)</p>
+    <p class="sub">Relevant modules: Programming for Data Analysis, Database Management Systems, Back-End Development, Secure Coding, Design for User Interaction</p>
+  </div>
+  <div class="item">
+    <div class="row"><strong>Yishun Secondary School, GCE O-Level</strong><span class="when">2021 – 2024</span></div>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <b>Languages</b><span>Python, JavaScript, SQL, HTML, CSS</span>
+    <b>Data &amp; analytics</b><span>Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook, UiPath (RPA)</span>
+    <b>Back end</b><span>Node.js, Express, REST APIs, JWT, bcrypt, Prisma ORM, Bootstrap</span>
+    <b>Databases</b><span>MySQL, PostgreSQL, stored procedures, transactions, B-tree indexing</span>
+    <b>Design &amp; UX</b><span>Figma wireframes and prototypes, usability testing, personas, user research</span>
+    <b>Security &amp; tools</b><span>OWASP (XSS, SQL injection), parameterised queries, input sanitisation, Git, GitHub</span>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="row"><strong>Wellness Impact: Gamified Wellness App <span class="stack">· Node.js, Express, MySQL, JWT</span></strong><span class="when">Feb 2026</span></div>
+    <ul>
+      <li>Built a 32-route Express REST API on a 10-table MySQL schema, with 7 browser minigames</li>
+      <li>Secured accounts with bcrypt and JWT; enforced 30-minute cooldowns and HP limits on the server</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><strong>Restaurant Ordering System <span class="stack">· PostgreSQL, Prisma, Express</span></strong><span class="when">Aug 2026</span></div>
+    <ul>
+      <li>Designed cart, checkout, discount and delivery-tier tables; new discount rules need only 1 INSERT</li>
+      <li>Wrote an order stored procedure that skips unavailable items; an index made a query 2.2× faster on 818k rows</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><strong>Graduate vs National Workforce Analysis (group of 4) <span class="stack">· Python, Seaborn, UiPath</span></strong><span class="when">Jul 2026</span></div>
+    <ul>
+      <li>Shaped the research question and picked 3 data.gov.sg datasets to compare 8 years (2013–2020)</li>
+      <li>Built the boxplot analysis; found graduate employment held about 10 points above the national rate</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><strong>MyLearningAI: AI-Assisted Learning App (group of 4) <span class="stack">· Figma, UX research</span></strong><span class="when">Feb 2026</span></div>
+    <ul>
+      <li>Designed 21 Figma wireframe screens: login, sign-up, home and the AI Lesson Companion</li>
+      <li>Ran and analysed 1 of the team's 4 usability tests; participant completed 100% of tasks unaided</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><strong>Job Posting Salary Analysis <span class="stack">· Python, Pandas, Matplotlib</span></strong><span class="when">May 2026</span></div>
+    <ul>
+      <li>Merged 5 source files into 123,849 postings and converted hourly to monthly pay into annual salary</li>
+      <li>Analysed pay by experience, work type and location across 5 different chart types</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><strong>Secure Coding: XSS and SQL Injection (pair) <span class="stack">· Node.js, SQL, sanitize-html</span></strong><span class="when">Aug 2026</span></div>
+    <ul>
+      <li>Exploited and fixed 2 high-risk flaws live: stored XSS (CWE-79) and SQL injection (CWE-89)</li>
+      <li>Replaced string-built SQL with parameterised queries and added sanitising middleware</li>
+    </ul>
+  </div>
+
+  <h2>Work Experience</h2>
+  <div class="item">
+    <div class="row"><strong>Barista, KOI Thé Singapore</strong><span class="when">Nov 2024 – Apr 2025</span></div>
+    <ul>
+      <li>Worked high-volume shifts in a small team over 6 months and helped hit daily sales targets</li>
+      <li>Handled POS cashiering and complex custom orders accurately during peak-hour rushes</li>
+    </ul>
+  </div>
+
+  <h2>Languages</h2>
+  <p>English (native) · Chinese (native) · Korean (elementary)</p>
+
+</div>
+</body>
+</html>
